@@ -5,6 +5,6 @@ const ability = defineAbilityFor({
   role: 'MEMBER',
 });
 
-const project = projectSchema.parse({ id: 'project-id', ownerId: 'user2-id' });
+const project = projectSchema.parse({ id: 'project-id', ownerId: 'user-id' });
 
-console.log(ability.can('delete', project));
+console.log(ability.can('update', project));
